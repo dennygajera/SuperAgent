@@ -1,0 +1,6 @@
+framework module Pods_Super_Agent {
+  umbrella header "Pods-Super Agent-umbrella.h"
+
+  export *
+  module * { export * }
+}
