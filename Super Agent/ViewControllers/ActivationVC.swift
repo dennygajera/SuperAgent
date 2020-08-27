@@ -20,14 +20,13 @@ class ActivationVC: UIViewController {
         txtOTP1.delegate = self
         txtOTP2.delegate = self
         txtOTP3.delegate = self
-        txtOTP1.becomeFirstResponder()
+//        txtOTP1.becomeFirstResponder()
     }
     
 }
 
 extension ActivationVC: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        print(textField.text?.count)
         if ((textField.text?.count)! >= 2 ) && (string.count > 0) {
             if textField == txtOTP1 {
                 txtOTP2.becomeFirstResponder()
@@ -62,5 +61,9 @@ extension ActivationVC: UITextFieldDelegate {
         }
         
         return true
+    }
+    
+    func navigateToMain() {
+        performSegue(withIdentifier: "activate", sender: nil)
     }
 }
