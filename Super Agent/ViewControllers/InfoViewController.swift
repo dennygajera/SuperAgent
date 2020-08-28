@@ -37,6 +37,7 @@ class InfoViewController: UIViewController {
 //    }
     
     @IBAction func close() {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
+//        self.dismiss(animated: true, completion: nil)
     }
 }

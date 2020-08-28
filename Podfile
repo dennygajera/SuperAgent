@@ -11,7 +11,9 @@ target 'Super Agent' do
   pod 'UICircularProgressRing'
   pod 'Firebase/RemoteConfig', '6.4.0'
   pod 'SPAlert'
-
+  pod 'Alamofire', '~> 4.7'
+  pod 'ReachabilitySwift'
+  pod 'KRProgressHUD'
   # Pods for Super Agent
 
 end

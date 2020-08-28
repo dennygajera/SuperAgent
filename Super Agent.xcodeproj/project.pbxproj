@@ -49,6 +49,8 @@
 		0DD0D3F323E4ACB100C251E8 /* UIViewController+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0D3F123E4ACB100C251E8 /* UIViewController+HideKeyboard.swift */; };
 		0DD0D3F423E4ACB100C251E8 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0D3F223E4ACB100C251E8 /* UIViewController+Alert.swift */; };
 		84BAFECD46C96CDDA66E8306 /* Pods_Super_Agent_Block.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90EF1D7D218C8574349AACA8 /* Pods_Super_Agent_Block.framework */; };
+		9474512A24F98BBC00091734 /* ForgotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9474512924F98BBC00091734 /* ForgotVC.swift */; };
+		94840A1624F922A8004C1C50 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94840A1524F922A8004C1C50 /* ServiceManager.swift */; };
 		94C5B85B24F69BAE0039B4A6 /* ActivationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C5B85A24F69BAE0039B4A6 /* ActivationVC.swift */; };
 		9A4145B4A0D841AFF1D04A77 /* Pods_Super_Agent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356FB1F44613EC2285753AEB /* Pods_Super_Agent.framework */; };
 /* End PBXBuildFile section */
@@ -129,6 +131,9 @@
 		56D07269C49D2FCAA8664DB0 /* Pods-Super Agent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super Agent.debug.xcconfig"; path = "Target Support Files/Pods-Super Agent/Pods-Super Agent.debug.xcconfig"; sourceTree = "<group>"; };
 		877F384A75E73CFCD4FF8898 /* Pods-Super Agent Block.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super Agent Block.release.xcconfig"; path = "Target Support Files/Pods-Super Agent Block/Pods-Super Agent Block.release.xcconfig"; sourceTree = "<group>"; };
 		90EF1D7D218C8574349AACA8 /* Pods_Super_Agent_Block.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Super_Agent_Block.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9474512924F98BBC00091734 /* ForgotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotVC.swift; sourceTree = "<group>"; };
+		94840A1524F922A8004C1C50 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		94840A1724F928CD004C1C50 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C5B85A24F69BAE0039B4A6 /* ActivationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationVC.swift; sourceTree = "<group>"; };
 		C7BFAAD8587A6CC80FE72904 /* Pods-Super Agent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super Agent.release.xcconfig"; path = "Target Support Files/Pods-Super Agent/Pods-Super Agent.release.xcconfig"; sourceTree = "<group>"; };
 		EE1B08374817FE21CFBE5BDD /* Pods-Super Agent Block.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Super Agent Block.debug.xcconfig"; path = "Target Support Files/Pods-Super Agent Block/Pods-Super Agent Block.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +215,7 @@
 				0D8E715723E61222007F5B61 /* FilterViewController.swift */,
 				0D8E715D23E63835007F5B61 /* SettingsFilterViewController.swift */,
 				94C5B85A24F69BAE0039B4A6 /* ActivationVC.swift */,
+				9474512924F98BBC00091734 /* ForgotVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -247,6 +253,7 @@
 		0D96B73223E3284900E5845A /* Super Agent */ = {
 			isa = PBXGroup;
 			children = (
+				94840A1524F922A8004C1C50 /* ServiceManager.swift */,
 				0D96B75923E328D900E5845A /* Super Agent.entitlements */,
 				0D96B75B23E329C500E5845A /* EasyListParser */,
 				0D01EDDE23E33BF90087F5EE /* Extensions */,
@@ -296,6 +303,7 @@
 		D501A6ED8D35099CEB883A35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94840A1724F928CD004C1C50 /* Alamofire.framework */,
 				356FB1F44613EC2285753AEB /* Pods_Super_Agent.framework */,
 				90EF1D7D218C8574349AACA8 /* Pods_Super_Agent_Block.framework */,
 			);
@@ -483,6 +491,7 @@
 				0D96B73823E3284900E5845A /* WelcomeAndDownloadScreen.swift in Sources */,
 				0D95953F23E5FD4300BEC2F7 /* WhiteListViewController.swift in Sources */,
 				0D01EDDC23E33BF00087F5EE /* UIView+decoration.swift in Sources */,
+				9474512A24F98BBC00091734 /* ForgotVC.swift in Sources */,
 				0DD0D3F423E4ACB100C251E8 /* UIViewController+Alert.swift in Sources */,
 				94C5B85B24F69BAE0039B4A6 /* ActivationVC.swift in Sources */,
 				0D96B76C23E329C500E5845A /* ELBlockerEntry.swift in Sources */,
@@ -491,6 +500,7 @@
 				0D96B76623E329C500E5845A /* ELBlockerEntry+Serialize.swift in Sources */,
 				0DD0D3F323E4ACB100C251E8 /* UIViewController+HideKeyboard.swift in Sources */,
 				0D01EDDD23E33BF00087F5EE /* Data String + append.swift in Sources */,
+				94840A1624F922A8004C1C50 /* ServiceManager.swift in Sources */,
 				0D95953923E5E36200BEC2F7 /* HintViewController.swift in Sources */,
 				0D96B76B23E329C500E5845A /* ELLineParser.swift in Sources */,
 				0D96B76723E329C500E5845A /* ELOptionParser.swift in Sources */,

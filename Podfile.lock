@@ -1,5 +1,6 @@
 PODS:
   - AIFlatSwitch (1.0.7)
+  - Alamofire (4.9.1)
   - Firebase/Analytics (6.4.0):
     - Firebase/Core
   - Firebase/Core (6.4.0):
@@ -60,26 +61,34 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.3.2):
     - GoogleUtilities/Logger
+  - KRActivityIndicatorView (3.0.5)
+  - KRProgressHUD (3.4.5):
+    - KRActivityIndicatorView (= 3.0.5)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
   - Protobuf (3.11.0)
+  - ReachabilitySwift (5.0.0)
   - SPAlert (2.0.10)
   - UICircularProgressRing (6.4.0)
 
 DEPENDENCIES:
   - AIFlatSwitch (~> 1.0)
+  - Alamofire (~> 4.7)
   - Firebase/Analytics (= 6.4.0)
   - Firebase/Core (= 6.4.0)
   - Firebase/RemoteConfig (= 6.4.0)
+  - KRProgressHUD
+  - ReachabilitySwift
   - SPAlert
   - UICircularProgressRing
 
 SPEC REPOS:
   trunk:
     - AIFlatSwitch
+    - Alamofire
     - Firebase
     - FirebaseABTesting
     - FirebaseAnalytics
@@ -88,13 +97,17 @@ SPEC REPOS:
     - FirebaseRemoteConfig
     - GoogleAppMeasurement
     - GoogleUtilities
+    - KRActivityIndicatorView
+    - KRProgressHUD
     - nanopb
     - Protobuf
+    - ReachabilitySwift
     - SPAlert
     - UICircularProgressRing
 
 SPEC CHECKSUMS:
   AIFlatSwitch: fd56a5e6ab8769f0b52cef815c4f071e83050352
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Firebase: 9445469655a98e9010737f4bc4720e5bda465873
   FirebaseABTesting: a32c488eb75089a61eb3d86db061dfb909d765db
   FirebaseAnalytics: 69fe25866d2ec87c6f02d72c3c9a82bce9c065a0
@@ -103,11 +116,14 @@ SPEC CHECKSUMS:
   FirebaseRemoteConfig: 7f6a0899f51953999667cb34a13b2e479c17d840
   GoogleAppMeasurement: 1e45fa601e6280c180880d57010390f6679cd971
   GoogleUtilities: 547a86735c6f0ee30ad17e94df4fc21f616b71cb
+  KRActivityIndicatorView: 912bc0413d98340f384b12a4e1e6aa8f42fb377d
+  KRProgressHUD: df4cdc3a1baf708d4276a089ee34d133fa9a6f3e
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Protobuf: 394b2bf29ec303f4325e3ee4892c09e675647152
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   SPAlert: 1cf1fc2bb54071265b60ac8456951c2c6f33c95e
   UICircularProgressRing: 907613633e76e561b972a3868c95517d14c71006
 
-PODFILE CHECKSUM: d489fce6e28f287f50cd0b78733ac790bc4a0d97
+PODFILE CHECKSUM: bdaecfd91b2e46154f236b32651cfb4045a974ce
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

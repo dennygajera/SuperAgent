@@ -50,7 +50,7 @@ open class SPAlertView: UIView {
     /**
      Duration time when alert visible.
      */
-    public var duration: TimeInterval = 1.5
+    public var duration: TimeInterval = 4
     
     /**
      Allow dismiss by tap on alert. By default it allowed.

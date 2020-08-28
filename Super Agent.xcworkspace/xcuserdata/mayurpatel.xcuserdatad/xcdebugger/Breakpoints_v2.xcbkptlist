@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F0FAD4F8-0DAC-4F2F-9729-F0F717C94A64"
+            uuid = "6197A54D-28A9-40F0-AD90-47AD72CB646F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Super Agent/ViewControllers/ActivationVC.swift"
+            filePath = "Super Agent/ViewControllers/ForgotVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "webView(_:didReceive:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46BBA8CC-8B06-48C3-BE29-A45D2C108C91"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Super Agent/ViewControllers/ForgotVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "webView(_:didReceive:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
