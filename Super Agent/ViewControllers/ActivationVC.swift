@@ -18,49 +18,47 @@ class ActivationVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
-        
-        //        txtOTP1.delegate = self
-        //        txtOTP2.delegate = self
-        //        txtOTP3.delegate = self
-        //        txtOTP1.becomeFirstResponder()
+        txtOTP1.delegate = self
+        txtOTP2.delegate = self
+        txtOTP3.delegate = self
+        txtOTP1.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControl.Event.editingChanged)
+        txtOTP2.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControl.Event.editingChanged)
+        txtOTP3.addTarget(self, action: #selector(self.textFieldDidChange(textField:)), for: UIControl.Event.editingChanged)
+                txtOTP1.becomeFirstResponder()
     }
     
 }
 
 extension ActivationVC: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if ((textField.text?.count)! >= 2 ) && (string.count > 0) {
-            if textField == txtOTP1 {
+    
+    @objc func textFieldDidChange(textField: UITextField){
+        let text = textField.text
+        if  text?.count == 3 {
+            switch textField{
+            case txtOTP1:
                 txtOTP2.becomeFirstResponder()
-            }
-            
-            if textField == txtOTP2 {
+            case txtOTP2:
                 txtOTP3.becomeFirstResponder()
-            }
-            
-            if textField == txtOTP3 {
+            case txtOTP3:
                 txtOTP3.becomeFirstResponder()
+            default:
+                break
             }
-            textField.text = string
-            return false
-        } else if ((textField.text?.count)! >= 3) && (string.count == 0) {
-            if textField == txtOTP2 {
-                txtOTP1.becomeFirstResponder()
-            }
-            if textField == txtOTP3 {
-                txtOTP2.becomeFirstResponder()
-            }
-            if textField == txtOTP1 {
-                txtOTP1.resignFirstResponder()
-            }
-            textField.text = ""
-            return false
-        } else if (textField.text?.count)! >= 3 {
-            textField.text = string
-            return false
         }
-        return true
+        if  text?.count == 0 {
+            switch textField{
+            case txtOTP1:
+                txtOTP1.becomeFirstResponder()
+            case txtOTP2:
+                txtOTP1.becomeFirstResponder()
+            case txtOTP3:
+                txtOTP2.becomeFirstResponder()
+            default:
+                break
+            }
+        }
     }
+    
     
     @IBAction func btnForgotClick(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ForgotVC") as! ForgotVC
@@ -84,12 +82,11 @@ extension ActivationVC: UITextFieldDelegate {
                     
                 }
             }
-            
         }
     }
     
     func wsCall(block: @escaping (Bool?) -> Void) {
-        let dic = ["transactionID":"733-UMK-674"]
+        let dic = ["transactionID":"\(txtOTP1.text)-\(txtOTP2.text)-\(txtOTP3.text)"]
         ServiceManager.sharedInstance.postRequest(parameterDict: dic, URL: APINAME().ACTIVATIONCODE) { (dicResult, err) in
             let status = dicResult?.value(forKey: "isActive") as! Int
             if status == 1 {
