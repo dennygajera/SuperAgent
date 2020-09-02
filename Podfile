@@ -13,6 +13,7 @@ target 'Super Agent' do
   pod 'SPAlert'
   pod 'Alamofire', '~> 4.7'
   pod 'ReachabilitySwift'
+  pod 'IQKeyboardManagerSwift'
   pod 'KRProgressHUD'
   # Pods for Super Agent
 

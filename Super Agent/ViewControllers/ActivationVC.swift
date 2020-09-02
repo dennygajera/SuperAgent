@@ -86,7 +86,7 @@ extension ActivationVC: UITextFieldDelegate {
     }
     
     func wsCall(block: @escaping (Bool?) -> Void) {
-        let dic = ["transactionID":"\(txtOTP1.text)-\(txtOTP2.text)-\(txtOTP3.text)"]
+        let dic = ["transactionID":"\(txtOTP1.text ?? "")-\(txtOTP2.text ?? "")-\(txtOTP3.text ?? "")"]
         ServiceManager.sharedInstance.postRequest(parameterDict: dic, URL: APINAME().ACTIVATIONCODE) { (dicResult, err) in
             let status = dicResult?.value(forKey: "isActive") as! Int
             if status == 1 {

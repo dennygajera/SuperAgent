@@ -61,6 +61,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.3.2):
     - GoogleUtilities/Logger
+  - IQKeyboardManagerSwift (6.5.5)
   - KRActivityIndicatorView (3.0.5)
   - KRProgressHUD (3.4.5):
     - KRActivityIndicatorView (= 3.0.5)
@@ -80,6 +81,7 @@ DEPENDENCIES:
   - Firebase/Analytics (= 6.4.0)
   - Firebase/Core (= 6.4.0)
   - Firebase/RemoteConfig (= 6.4.0)
+  - IQKeyboardManagerSwift
   - KRProgressHUD
   - ReachabilitySwift
   - SPAlert
@@ -97,6 +99,7 @@ SPEC REPOS:
     - FirebaseRemoteConfig
     - GoogleAppMeasurement
     - GoogleUtilities
+    - IQKeyboardManagerSwift
     - KRActivityIndicatorView
     - KRProgressHUD
     - nanopb
@@ -116,6 +119,7 @@ SPEC CHECKSUMS:
   FirebaseRemoteConfig: 7f6a0899f51953999667cb34a13b2e479c17d840
   GoogleAppMeasurement: 1e45fa601e6280c180880d57010390f6679cd971
   GoogleUtilities: 547a86735c6f0ee30ad17e94df4fc21f616b71cb
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   KRActivityIndicatorView: 912bc0413d98340f384b12a4e1e6aa8f42fb377d
   KRProgressHUD: df4cdc3a1baf708d4276a089ee34d133fa9a6f3e
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
@@ -124,6 +128,6 @@ SPEC CHECKSUMS:
   SPAlert: 1cf1fc2bb54071265b60ac8456951c2c6f33c95e
   UICircularProgressRing: 907613633e76e561b972a3868c95517d14c71006
 
-PODFILE CHECKSUM: bdaecfd91b2e46154f236b32651cfb4045a974ce
+PODFILE CHECKSUM: 4f099b09ebcd502a4f3485e2fbd9ce0e7639cdce
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.9.1
