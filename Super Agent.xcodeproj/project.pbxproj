@@ -102,7 +102,7 @@
 		0D95954323E6044200BEC2F7 /* CustomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListViewController.swift; sourceTree = "<group>"; };
 		0D95D45A23E32DA7003170DA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0D95D45C23E32E07003170DA /* FilterSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSource.swift; sourceTree = "<group>"; };
-		0D96B73023E3284900E5845A /* Super Agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super Agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D96B73023E3284900E5845A /* Silentium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Silentium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D96B73323E3284900E5845A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D96B73723E3284900E5845A /* WelcomeAndDownloadScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeAndDownloadScreen.swift; sourceTree = "<group>"; };
 		0D96B73A23E3284900E5845A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -244,7 +244,7 @@
 		0D96B73123E3284900E5845A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D96B73023E3284900E5845A /* Super Agent.app */,
+				0D96B73023E3284900E5845A /* Silentium.app */,
 				0D96B74B23E328AC00E5845A /* Super Agent Block.appex */,
 			);
 			name = Products;
@@ -331,7 +331,7 @@
 			);
 			name = "Super Agent";
 			productName = "Super Agent";
-			productReference = 0D96B73023E3284900E5845A /* Super Agent.app */;
+			productReference = 0D96B73023E3284900E5845A /* Silentium.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0D96B74A23E328AC00E5845A /* Super Agent Block */ = {
@@ -690,7 +690,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.calendar.adblock;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Silentium;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -712,7 +712,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.calendar.adblock;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Silentium;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

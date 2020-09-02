@@ -90,8 +90,10 @@ extension ActivationVC: UITextFieldDelegate {
         ServiceManager.sharedInstance.postRequest(parameterDict: dic, URL: APINAME().ACTIVATIONCODE) { (dicResult, err) in
             let status = dicResult?.value(forKey: "isActive") as! Int
             if status == 1 {
+                UserDefaults.standard.set(true, forKey: "UserActive")
                 block(true)
             } else {
+                UserDefaults.standard.set(false, forKey: "UserActive")
                 block(false)
             }
         }

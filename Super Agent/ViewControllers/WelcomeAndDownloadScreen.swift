@@ -21,6 +21,10 @@ class WelcomeAndDownloadScreen: UIViewController {
         return .lightContent
     }
     
+    override func viewDidLoad() {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     @IBAction func mainAction() {
         print(BlockManager.shared.isFiltersDownloaded())
         if !downloaded {

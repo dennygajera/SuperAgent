@@ -17,7 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 13.0, *) {
             window?.overrideUserInterfaceStyle = .light
         }
-        
+        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+        navigationController.navigationBar.isHidden = true
+        let userSession = UserDefaults.standard.bool(forKey: "UserActive")
+        if userSession {
+            let rootViewController:UIViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+               navigationController.viewControllers = [rootViewController]
+               self.window?.rootViewController = navigationController
+        } else {
+            let rootViewController:UIViewController = storyboard.instantiateViewController(withIdentifier: "ActivationVC") as! ActivationVC
+               navigationController.viewControllers = [rootViewController]
+               self.window?.rootViewController = navigationController
+        }
         return true
     }
 }
