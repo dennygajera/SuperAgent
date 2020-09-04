@@ -56,7 +56,7 @@ class WelcomeAndDownloadScreen: UIViewController {
     func finishDownload() {
         downloaded = true
         mainButton.setTitle("Continue", for: .normal)
-        descriptionLabel.changeText(text: "Download complited")
+        descriptionLabel.changeText(text: "Download completed")
         mainButton.loadingIndicator(show: false)
     }
 

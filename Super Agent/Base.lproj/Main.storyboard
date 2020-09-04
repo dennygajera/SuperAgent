@@ -20,7 +20,7 @@
         <!--ActivationVC-->
         <scene sceneID="jVV-EB-jIW">
             <objects>
-                <viewController storyboardIdentifier="ActivationVC" id="P1g-xf-PBM" customClass="ActivationVC" customModule="Super_Agent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActivationVC" id="P1g-xf-PBM" customClass="ActivationVC" customModule="Silentium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="35D-ki-bdp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +168,7 @@
         <!--ForgotVC-->
         <scene sceneID="mhz-Pc-bGZ">
             <objects>
-                <viewController storyboardIdentifier="ForgotVC" id="R7H-Zm-FGA" customClass="ForgotVC" customModule="Super_Agent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotVC" id="R7H-Zm-FGA" customClass="ForgotVC" customModule="Silentium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFz-7B-JmS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,7 +236,7 @@
         <!--Welcome And Download Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="WelcomeAndDownloadScreen" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="WelcomeAndDownloadScreen" customModule="Super_Agent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeAndDownloadScreen" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="WelcomeAndDownloadScreen" customModule="Silentium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,22 +262,24 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="eyW-jj-zda">
                                 <rect key="frame" x="37" y="97" width="301" height="530"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Silentium" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q63-Wt-yTF">
-                                        <rect key="frame" x="0.0" y="0.0" width="301" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q63-Wt-yTF">
+                                        <rect key="frame" x="0.0" y="0.0" width="301" height="70"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="fWa-qe-l57"/>
+                                            <constraint firstAttribute="height" constant="70" id="fWa-qe-l57"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SFCompactRounded-Semibold" family="SF Compact Rounded" pointSize="26"/>
+                                        <string key="text">Welcome to 
+Silentium</string>
+                                        <fontDescription key="fontDescription" name="SFCompactRounded-Semibold" family="SF Compact Rounded" pointSize="23"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bxc-u2-dvK">
-                                        <rect key="frame" x="0.0" y="107" width="301" height="160"/>
+                                        <rect key="frame" x="0.0" y="114" width="301" height="160"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="160" id="dni-om-dlE"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9d-MZ-egz">
-                                        <rect key="frame" x="0.0" y="314" width="301" height="119"/>
+                                        <rect key="frame" x="0.0" y="317.5" width="301" height="119"/>
                                         <string key="text">Reliable protection against malicious sites, tracking tools and advertising. Browse the Internet safely and without annoyance. To keep filters relevant, click on the button and download the latest versions.</string>
                                         <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -337,7 +339,7 @@
         <!--Info View Controller-->
         <scene sceneID="bvX-Xz-Ffm">
             <objects>
-                <viewController id="3jO-GF-ZKG" customClass="InfoViewController" customModule="Super_Agent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3jO-GF-ZKG" customClass="InfoViewController" customModule="Silentium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9wG-0c-I8n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -453,7 +455,7 @@
         <!--Filters View Controller-->
         <scene sceneID="t7x-cq-fDJ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="FFN-es-fkW" customClass="FiltersViewController" customModule="Super_Agent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="FFN-es-fkW" customClass="FiltersViewController" customModule="Silentium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vwp-SD-rHf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -479,7 +481,7 @@
                                 <rect key="frame" x="30" y="77" width="315" height="464"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="title" rowHeight="64" id="0NJ-zh-Ugl" customClass="TitleTableViewCell" customModule="Super_Agent" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="title" rowHeight="64" id="0NJ-zh-Ugl" customClass="TitleTableViewCell" customModule="Silentium" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="315" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0NJ-zh-Ugl" id="rYN-Qj-ykA">
@@ -505,7 +507,7 @@
                                             <outlet property="titleLabel" destination="DcX-m6-SDf" id="xOA-iV-C5N"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="kuf-qM-SPX" customClass="FilterTableViewCell" customModule="Super_Agent" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="kuf-qM-SPX" customClass="FilterTableViewCell" customModule="Silentium" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="315" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kuf-qM-SPX" id="Hdv-VR-aMb">
@@ -648,7 +650,7 @@
         <!--Settings Filter View Controller-->
         <scene sceneID="Bre-Kv-Kkh">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="eJ4-om-W1f" customClass="SettingsFilterViewController" customModule="Super_Agent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="eJ4-om-W1f" customClass="SettingsFilterViewController" customModule="Silentium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="231-DF-Qod">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -911,7 +913,7 @@
         <!--Main View Controller-->
         <scene sceneID="nys-Us-fCV">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="glE-KJ-3Vf" customClass="MainViewController" customModule="Super_Agent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="glE-KJ-3Vf" customClass="MainViewController" customModule="Silentium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8U2-Lq-Iu9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1191,7 +1193,7 @@
         <!--Hint View Controller-->
         <scene sceneID="OVy-rh-L8x">
             <objects>
-                <viewController id="Pke-eq-RZl" customClass="HintViewController" customModule="Super_Agent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pke-eq-RZl" customClass="HintViewController" customModule="Silentium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cgG-lE-B6n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1199,12 +1201,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Fdf-eW-nf3">
                                 <rect key="frame" x="37" y="97" width="301" height="510"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activate Super Agent" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehf-Wp-TSV">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activate Silentium" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehf-Wp-TSV">
                                         <rect key="frame" x="0.0" y="0.0" width="301" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Njx-Lr-h6s"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SFCompactRounded-Semibold" family="SF Compact Rounded" pointSize="26"/>
+                                        <fontDescription key="fontDescription" name="SFCompactRounded-Semibold" family="SF Compact Rounded" pointSize="24"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1219,7 +1221,7 @@
                                         <string key="text">1 - Open settings
 2 - Open «Safari» settings
 3 - Select content blockers
-4 - Activate «Super Agent»</string>
+4 - Activate «Silentium»</string>
                                         <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1279,7 +1281,7 @@
         <!--White List View Controller-->
         <scene sceneID="g2X-f3-gfA">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Tbc-I2-9Dl" customClass="WhiteListViewController" customModule="Super_Agent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Tbc-I2-9Dl" customClass="WhiteListViewController" customModule="Silentium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dq7-8e-fU2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1372,7 +1374,7 @@
                                         <rect key="frame" x="0.0" y="180" width="295" height="262"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="64" id="yH9-rt-ane" customClass="DomainCell" customModule="Super_Agent" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="64" id="yH9-rt-ane" customClass="DomainCell" customModule="Silentium" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="295" height="64"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yH9-rt-ane" id="Wyl-3h-caP">
@@ -1490,7 +1492,7 @@
         <!--Filter View Controller-->
         <scene sceneID="gvR-Vi-aFi">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="gvZ-9F-WL6" customClass="FilterViewController" customModule="Super_Agent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="gvZ-9F-WL6" customClass="FilterViewController" customModule="Silentium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LWC-h3-BAI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1658,7 +1660,7 @@ Description: most popular advertising services</string>
         <!--Custom List View Controller-->
         <scene sceneID="eRL-Nn-9su">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="6gf-6g-OEg" customClass="CustomListViewController" customModule="Super_Agent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="6gf-6g-OEg" customClass="CustomListViewController" customModule="Silentium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LTm-z4-Xgh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1734,7 +1736,7 @@ Description: most popular advertising services</string>
                                         <rect key="frame" x="0.0" y="180" width="295" height="262"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="64" id="k8p-lU-Hwb" customClass="DomainCell" customModule="Super_Agent" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="64" id="k8p-lU-Hwb" customClass="DomainCell" customModule="Silentium" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="295" height="64"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k8p-lU-Hwb" id="BCJ-7V-vwL">
