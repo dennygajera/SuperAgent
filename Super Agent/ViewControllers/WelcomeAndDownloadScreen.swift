@@ -11,7 +11,7 @@ import UIKit
 class WelcomeAndDownloadScreen: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var txtViewDescriptionLabel: UITextView!
     @IBOutlet weak var mainButton: UIButton!
     
     let filters = Constants.filtersSources
@@ -32,7 +32,9 @@ class WelcomeAndDownloadScreen: UIViewController {
             
             DispatchQueue.global().async {
                 for filter in self.filters {
-                    self.descriptionLabel.changeText(text: "Downloading filter: \(filter.name)")
+                    DispatchQueue.main.async {
+                    self.txtViewDescriptionLabel.text = "Downloading filter: \(filter.name)"
+                    }
                     let semaphore = DispatchSemaphore(value: 0)
                     filter.updateList() { error in
                         if error == nil { semaphore.signal() } else {
@@ -56,7 +58,7 @@ class WelcomeAndDownloadScreen: UIViewController {
     func finishDownload() {
         downloaded = true
         mainButton.setTitle("Continue", for: .normal)
-        descriptionLabel.changeText(text: "Download completed")
+        self.txtViewDescriptionLabel.text = "Download completed"
         mainButton.loadingIndicator(show: false)
     }
 
