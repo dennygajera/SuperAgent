@@ -8,6 +8,7 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import SafariServices
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -31,6 +32,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                self.window?.rootViewController = navigationController
         }
         return true
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        let id = Config.App.extensionBundleId
+        SFContentBlockerManager.getStateOfContentBlocker(withIdentifier: id, completionHandler: { state, error in
+            DispatchQueue.main.async {
+                if state?.isEnabled ?? false {
+                    BlockManager.shared.isExtensionActive = true
+                } else {
+                    BlockManager.shared.isExtensionActive = false
+                }
+            }
+        })
     }
 }
 
