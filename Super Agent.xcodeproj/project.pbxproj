@@ -682,7 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Super Agent/Super Agent.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5Y28XZ8J4X;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Super Agent/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -704,7 +704,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Super Agent/Super Agent.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5Y28XZ8J4X;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Super Agent/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -725,7 +725,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "Super Agent Block/Super Agent Block.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5Y28XZ8J4X;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Super Agent Block/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -748,7 +748,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "Super Agent Block/Super Agent Block.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5Y28XZ8J4X;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Super Agent Block/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

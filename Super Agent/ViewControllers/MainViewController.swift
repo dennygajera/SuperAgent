@@ -81,6 +81,7 @@ class MainViewController: UIViewController, MFMailComposeViewControllerDelegate 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        self.statusLabel.changeText(text: "Disabled")
         self.updateSwitch(false)
         
         let id = Config.App.extensionBundleId
@@ -88,8 +89,10 @@ class MainViewController: UIViewController, MFMailComposeViewControllerDelegate 
             DispatchQueue.main.async {
                 if state?.isEnabled ?? false {
                     BlockManager.shared.isExtensionActive = true
+                    self.statusLabel.changeText(text: "Activated")
                 } else {
                     BlockManager.shared.isExtensionActive = false
+                    self.statusLabel.changeText(text: "Disabled")
                 }
             }
         })
